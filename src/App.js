@@ -5,7 +5,8 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import RecipesList from "./pages/Recipes";  // Make sure Recipes.js exports RecipesList
-import RecipeDetails from "./pages/RecipeDetails"; // Import RecipeDetails separately
+import RecipeDetails from "./pages/RecipeDetails";
+import Videos from "./pages/Videos";
 import "./App.css";
 
 const localRecipes = [
@@ -74,7 +75,8 @@ class App extends Component {
           />
           <Route path="/about" component={About} />
           <Route exact path="/recipes" component={RecipesList} />
-          <Route path="/recipe/:id" component={RecipeDetails} />  
+          <Route path="/recipe/:id" component={RecipeDetails} />
+          <Route path="/videos" component={Videos} />
         </Switch>
         <Footer />
       </Router>
